@@ -6,7 +6,6 @@ from .models import Otziv
 @admin.register(Otziv)
 class OtzivAdmin(admin.ModelAdmin):
     search_fields = ('name',)
-    list_display = ['id', 'name', 'email', 'address']
-
+    list_display = ['name', 'email', 'address']
 
 
